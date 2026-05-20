@@ -30,5 +30,4 @@ ENV PATH="/usr/local/src/SpriterR10(64):$PATH"
 ENV QT_PLUGIN_PATH="/usr/local/src/SpriterR10(64)/plugins"
     
 WORKDIR /root
-COPY entrypoint.sh /tmp/entrypoint.sh
-CMD [ "/bin/bash", "-c", "/tmp/entrypoint.sh" ]
+CMD [ "Spriter" ]
