@@ -1,3 +1,6 @@
 # MacOS
 .DS_Store
 .cache/rosetta
+
+# Config
+.config/QtProject.conf

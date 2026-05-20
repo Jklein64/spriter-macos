@@ -24,10 +24,11 @@ WORKDIR /usr/local/src
 # Download and extract Spriter software
 RUN wget https://brashmonkey.com/brashmonkey/spriter/linux/Spriter_free_R10.tar.gz && \
     tar -xvzf Spriter_free_R10.tar.gz
+WORKDIR /usr/local/src/SpriterR10(64)
 # Add it to PATH
-ENV PATH="/usr/local/src/SpriterR10(64):$PATH"
+# ENV PATH="/usr/local/src/SpriterR10(64):$PATH"
 # Fix for a Qt plugins bug
 ENV QT_PLUGIN_PATH="/usr/local/src/SpriterR10(64)/plugins"
     
-WORKDIR /root
-CMD [ "Spriter" ]
+# WORKDIR /root
+CMD [ "./Spriter" ]
